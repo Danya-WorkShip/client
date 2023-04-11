@@ -1,0 +1,31 @@
+.GettLogo {
+    width: 47px;
+    height: 47px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+        .LogoHover {
+            margin-top: 4px;
+            margin-left: -4px;
+        }
+    }
+}
+
+.logo {
+    position: absolute;
+    z-index: 3;
+}
+
+.LogoHover {
+    left: 0;
+    top: 0;
+    background: #706D6D;
+    height: 47px;
+    width: 47px;
+    z-index: 1;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    transition: 0.3s ease;
+}

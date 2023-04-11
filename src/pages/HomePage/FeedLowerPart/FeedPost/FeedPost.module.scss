@@ -1,0 +1,209 @@
+.PostWrapper {
+    transition: 0.3s ease;
+    padding: 35px 0;
+}
+
+.FeedPost {
+    display: block;
+}
+
+.Background {
+    width: 50%;
+	min-width: 700px;
+	margin: 0 auto;
+	transition: 0.5s ease;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 25px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    @media (max-width: 1550px) {
+		width: 850px;
+	}
+	@media (max-width: 1100px) {
+		width: 100%;
+        min-width: 0px;
+	}
+}
+
+.Post {
+    padding-top: 25px;
+	transition: 0.5s ease;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 25px;
+    backdrop-filter: blur(15px);
+    padding-bottom: 25px;
+}
+
+.postUpperPart {
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.postInfo {
+    display: flex;
+    height: 60px;
+    width: 93%;
+    position: relative;
+    align-items: flex-start;
+    margin: 0 35px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+        width: 120%;
+        height: 120%;
+        margin-left: -10%;
+        margin-top: -10%;
+        object-fit: cover;
+        cursor: pointer;
+    }
+}
+
+.names {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.creatorName {
+    min-width: 75px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.creatorId {
+    height: 65%;
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 50%;
+    margin-top: 7px;
+}
+
+.moreActions {
+    margin-top: 10px;
+    margin-left: auto;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    &:hover {
+        transform: scale(1.1,1.1);
+    }
+    svg {
+        height: 25px;
+        width: 25px;
+        fill: #fff;
+    }
+}
+
+.postText {
+    margin: 0 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    span {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 30px;
+        
+    }   
+}
+
+.AdditionalContent {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        width: calc(100% / 2);
+        max-height: 600px;
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        object-fit: cover;
+    }
+}
+
+.Actions {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 25px;
+    .Action {
+        width: 230px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        background: #0D0D0D;
+        font-size: 14px;
+        font-weight: 600;
+        transition: 0.3s ease;
+        cursor: pointer;
+        svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+    }
+}
+
+.ContextButtons {
+    transition: 0.3s ease;
+    .ContextVariant {
+        height: 50px;
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 15px;
+        font-size: 12px;
+        font-weight: 500;
+        transition: 0.3s ease;
+        cursor: pointer;
+        &:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 15px;
+        }
+    }
+    .ContextVariantRed {
+        height: 50px;
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 15px;
+        font-size: 12px;
+        font-weight: 600;
+        transition: 0.3s ease;
+        cursor: pointer;
+        &:hover {
+            background: rgba(219, 33, 33, 0.2);
+        }
+        svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 15px;
+        }
+    }
+}

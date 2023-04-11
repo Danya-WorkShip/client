@@ -1,0 +1,79 @@
+.RightPart {
+    width: 22.5%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+}
+
+.Title {
+    width: 100%;
+    height: 70px;
+    padding-left: 15px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.ImagesSection {
+    width: 100%;
+    height: 260px;
+    .Images {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 15px;
+        gap: 2px;
+        .Image {
+            height: 90px;
+            max-width: 130px;
+            img {
+                height: 90px;
+                max-width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.VideosSection {
+    width: 100%;
+    height: 260px;
+    .Videos {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 15px;
+        gap: 2px;
+        .Video {
+            height: 90px;
+            max-width: 130px;
+            img {
+                height: 90px;
+                max-width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.MusicSection {
+    width: 100%;
+    height: 250px;
+    .Music {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 15px;
+        gap: 5px;
+        .Track {
+            width: 70px;
+            height: 70px;
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 15px;
+                object-fit: cover;
+            }
+        }
+    }
+}

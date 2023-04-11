@@ -1,0 +1,38 @@
+.CardRightPart {
+}
+
+.followers {
+    .followersCount {
+        span {
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 37px;
+        }
+    }
+    .followersTitle {
+        span {
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 30px;
+            opacity: 70%;
+        }
+    }
+}
+.listeners {
+    margin-top: 45px;
+    .listenersCount {
+        span {
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 37px;
+        }
+    }
+    .listenersTitle {
+        span {
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 30px;
+            opacity: 70%;
+        }
+    }
+}

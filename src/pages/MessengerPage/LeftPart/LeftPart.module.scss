@@ -1,0 +1,113 @@
+.LeftPart {
+    width: 22.5%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+}
+
+.UpperPart {
+    width: 100%;
+    .LastSeen {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        font-weight: 500;
+        opacity: 0.7;
+    }
+    .Avatar {
+        width: 175px;
+        height: 175px;
+        margin: 0 auto;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+    .Name {
+        width: 100%;
+        margin-top: 25px;
+        text-align: center;
+    }
+    .Counts {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 25px;
+        div {
+            transition: 0.3s ease;
+            width: 120px;
+            border-radius: 15px;
+            padding: 10px;
+            cursor: pointer;
+            &:hover {
+                background: rgba(255, 255, 255, 0.2);
+            }
+            h4 {
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 21px;
+                color: #fff;
+            }
+            span {
+                opacity: 80%;
+                font-weight: 300;
+                font-size: 13px;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.LowerPart {
+    width: 100%;
+    .ProcessAction {
+        width: 100%;
+        margin-top: 10px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding-left: 48px;
+        font-size: 14px;
+        font-weight: 600;
+        opacity: 0.7;
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
+
+.Actions {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    .Action {
+        width: 50%;
+        height: 164px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s ease;
+        cursor: pointer;
+        &:hover {
+            background: #191919;
+        }
+        .Icon {
+            width: 25px;
+            height: 25px;
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .Title {
+            margin-top: 25px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+    }
+}

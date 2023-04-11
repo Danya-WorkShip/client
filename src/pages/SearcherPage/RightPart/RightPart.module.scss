@@ -1,0 +1,184 @@
+.RightPart {
+    width: 22.5%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+    color: black;
+}
+
+.Settings {
+    width: 100%;
+    
+}
+
+.FindPeopleBySchool {
+    width: 90%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+    margin-top: 35px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 7px;
+    cursor: pointer;
+    .Title {
+        width: 340px;
+        height: 100%;
+        padding-left: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .Thumbler {
+        width: 35px;
+        height: 35px;
+        border-radius: 7px;
+        background: rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: 5px;
+        svg {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+.ChooseSchool {
+    width: 90%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+    margin-top: 35px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 7px;
+    cursor: pointer;
+    position: relative;
+    .WtfIsThis {
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        cursor: pointer;
+        z-index: 5;
+    }
+    .Title {
+        width: 340px;
+        height: 100%;
+        padding-left: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        opacity: 0.7;
+        font-weight: 600;
+        cursor: text;
+    }
+    .More {
+        width: 35px;
+        height: 35px;
+        padding-top: 2px;
+        border-radius: 7px;
+        background: rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: 5px;
+        svg {
+            width: 13px;
+            height: 13px;
+        }
+    }
+}
+
+.SchoolsList {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    height: 330px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    overflow-y: scroll;
+    display: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .School {
+        width: 98%;
+        margin: 0 auto;
+        margin-top: 1%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding-left: 12px;
+        font-size: 13px;
+        font-weight: 600;
+        border-radius: 10px;
+        transition: 0.3s ease;
+        &:hover {
+            background: rgba(0, 0, 0, 0.1);
+        }
+        .Icon {
+            width: 25px;
+            height: 25px;
+            margin-right: 15px;
+            svg {
+                width: 22px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+.AnonymousButton {
+    width: 90%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+    margin-top: 35px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 7px;
+    cursor: pointer;
+    .Title {
+        width: 340px;
+        height: 100%;
+        padding-left: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .Thumbler {
+        width: 35px;
+        height: 35px;
+        border-radius: 7px;
+        background: rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: 5px;
+        svg {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.TrackPanel {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 55px;
+    z-index: 10;
+    background: rgba(12, 12, 12, 0.5);
+    backdrop-filter: blur(12.5px);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}

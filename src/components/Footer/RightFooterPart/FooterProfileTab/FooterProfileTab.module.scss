@@ -1,0 +1,14 @@
+.FooterProfileTab {
+	display: flex;
+	gap: 8px;
+	height: 100%;
+	width: auto;
+	max-width: 225px;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	margin-left: 55px;
+	@media (max-width: 1250px) {
+		display: none;
+	}
+}

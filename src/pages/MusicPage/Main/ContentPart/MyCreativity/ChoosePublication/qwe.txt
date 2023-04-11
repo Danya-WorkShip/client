@@ -1,0 +1,74 @@
+<div className={classes.PublishAlbum}>
+          <form className={classes.container}>
+            <div className={classes.cover}>
+                <input type="file" />
+                <div className={classes.image}><img src="img\6028805339.jpg" alt="" /></div>
+            </div>
+            <div className={classes.albumName}>
+                <h3 className={classes.albumNameTitle}></h3>
+                <input type="text" name="albom_name" />
+            </div>
+            <div className={classes.audio}>
+                <input type="file" name="audio" />
+                <div className={classes.sections}>
+                    <div className={classes.order}><span>#</span></div>
+                    <div className={classes.trackName}><span>Название</span></div>
+                    <div className={classes.fileName}><span>Файл</span></div>
+                </div>
+                <div className={classes.tracks}>
+                    <div className={classes.addedTrack}>
+                        <div className={classes.order}><span>1</span></div>
+                        <div className={classes.trackName}><span>POWER</span></div>
+                        <div className={classes.trackFile}><span>45454545647re...</span></div>
+                    </div>
+                </div>
+                <div className={classes.addTrack}>
+                  <span>Добавить трек</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="white" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.22266 4.11133V8.22266H4.11133H0V10V11.7773H4.11133H8.22266V15.8887V20H10H11.7773V15.8887V11.7773H15.8887H20V10V8.22266H15.8887H11.7773V4.11133V0H10H8.22266V4.11133Z" /></svg></div>
+                  <form className={classes.trackForm}>
+                    <div className={classes.name}>
+                        <h3 className={classes.nameTitle}>Название трека</h3>
+                        <input type="text" name="song_name" />
+                    </div>
+                    <div className={classes.container}>
+                      <div className={classes.audio}>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0 3a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4 8a4 4 0 1 0 8 0 4 4 0 0 0-8 0z"/></svg>
+                          <input type="file" name="audio" />
+                      </div>
+                      <div className={classes.cover}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>
+                        <input type="file" data-buttonText="Your label here." />
+                        <div className={classes.image}><img src="img\6028805339.jpg" alt="" /></div>
+                      </div>
+                    </div>
+                    <div className={classes.publishButton}>
+                        <button onClick={(e) => e.preventDefault()}>Опубликовать</button>
+                    </div>
+                  </form>
+                </div>
+            <div className={classes.publishButton}>
+                <button>Опубликовать</button>
+            </div>
+          </form>
+        </div>
+        <form className={classes.trackForm}>
+            <div className={classes.name}>
+                <h3 className={classes.nameTitle}>Название трека</h3>
+                <input type="text" name="song_name" />
+            </div>
+            <div className={classes.container}>
+              <div className={classes.audio}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0 3a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4 8a4 4 0 1 0 8 0 4 4 0 0 0-8 0z"/></svg>
+                  <input type="file" name="audio" />
+              </div>
+              <div className={classes.cover}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>
+                  <input type="file" data-buttonText="Your label here." />
+                  <div className={classes.image}><img src="img\6028805339.jpg" alt="" /></div>
+              </div>
+            </div>
+            <div className={classes.publishButton}>
+                <button onClick={(e) => e.preventDefault()}>Опубликовать</button>
+            </div>
+        </form>
+    </div>

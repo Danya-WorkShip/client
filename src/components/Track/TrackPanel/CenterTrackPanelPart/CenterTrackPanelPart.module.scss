@@ -1,0 +1,185 @@
+.CenterTrackPanelPart {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .UpperPart {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 60%;
+        .LeftManagePart {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            opacity: 0.7;
+            .StreamMusic {
+                width: 44px;
+                height: 44px;
+                margin-right: 10px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 0.3s ease;
+                &:hover {
+                    background: rgba(255, 255, 255, 0.1);
+                }
+                svg {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+            .Shape {
+                width: 44px;
+                height: 44px;
+                margin-right: 10px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 0.3s ease;
+                &:hover {
+                    background: rgba(255, 255, 255, 0.1);
+                }
+                svg {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+        .CenterManagePart {
+            display: flex;
+            gap: 0 10px;
+            .Previous {
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0.8;
+                transition: 0.3s ease;
+                svg {
+                    width: 13px;
+                    height: 13px;
+                }
+                &:hover {
+                    background: rgba(255, 255, 255, 0.1);
+                }
+            }
+            .Stop {
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 0.3s ease;
+                svg {
+                    width: 20px;
+                    height: 20px;
+                }
+                &:hover {
+                    background: rgba(255, 255, 255, 0.1);
+                }
+            }
+            .Next {
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0.8;
+                transition: 0.3s ease;
+                svg {
+                    width: 13px;
+                    height: 13px;
+                }
+                &:hover {
+                    background: rgba(255, 255, 255, 0.1);
+                }
+            }
+        }
+        .RightManagePart {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 20px;
+            opacity: 0.7;
+            .Repeat {
+                width: 44px;
+                height: 44px;
+                margin-right: 10px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 0.3s ease;
+                &:hover {
+                    background: rgba(255, 255, 255, 0.1);
+                }
+                svg {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+            .DownloadTrack {
+                width: 44px;
+                height: 44px;
+                margin-right: 10px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 0.3s ease;
+                &:hover {
+                    background: rgba(255, 255, 255, 0.1);
+                }
+                svg {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+    }
+    .LowerPart {
+        height: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        width: 700px;
+        .DurationBar {
+            width: 100%;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 1.5px;
+            position: relative;
+        }
+        .CompletedDurationBar {
+            top: 0;
+            left: 0;
+            width: 700px;
+            height: 4px;
+            background: #EA294C;
+            border-radius: 1.5px;
+            transform: translateX(-700px);
+            position: absolute;
+        }
+        .Slider {
+            left: 0;
+            top: -5px;
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: white;
+            z-index: 150;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+        }
+    }
+}

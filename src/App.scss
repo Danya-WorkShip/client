@@ -1,0 +1,329 @@
+.App {
+    position: relative;
+}
+
+.active-modal {
+  overflow: hidden;
+}
+
+
+.menu-primary-enter {
+  position: absolute;
+  transform: translateX(-110%);
+}
+.menu-primary-enter-active {
+  transform: translateX(0%);
+  transition: all 0.4s ease;
+}
+.menu-primary-exit {
+  position: absolute;
+}
+.menu-primary-exit-active {
+  transform: translateX(-110%);
+  transition: all 0.4s ease;
+}
+
+.menu-primary1-enter {
+  position: absolute;
+  transform: translateX(110%);
+}
+.menu-primary1-enter-active {
+  transform: translateX(0%);
+  transition: all 0.4s ease;
+}
+.menu-primary1-exit {
+  position: absolute;
+}
+.menu-primary1-exit-active {
+  transform: translateX(110%);
+  transition: all 0.4s ease;
+}
+
+.menu-primary2-enter {
+  position: absolute;
+  transform: translateX(110%);
+}
+.menu-primary2-enter-active {
+  transform: translateX(0%);
+  transition: all 0.4s ease;
+}
+.menu-primary2-exit {
+  position: absolute;
+}
+.menu-primary2-exit-active {
+  transform: translateX(-110%);
+  transition: all 0.4s ease;
+}
+
+
+.menu-secondary-enter {
+  transform: translateX(110%);
+}
+.menu-secondary-enter-active {
+  transform: translateX(0%);
+  transition: all 0.4s ease;
+}
+.menu-secondary-exit-active {
+  transform: translateX(110%);
+  transition: 0.4s ease;
+}
+
+.menu-ternary-enter {
+  transform: translateX(110%);
+}
+.menu-ternary-enter-active {
+  transform: translateX(0%);
+  transition: all 0.4s ease;
+}
+.menu-ternary-exit-active {
+  transform: translateX(110%);
+  transition: 0.4s ease;
+}
+
+
+.accounts-enter {
+  opacity: 0;
+  height: 0px !important;
+  margin-top: 0px;
+}
+.accounts-enter-active {
+  opacity: 1;
+  height: 300px !important;
+
+}
+.accounts-exit {
+  height: 300px !important;
+}
+.accounts-exit-active {
+  height: 0px !important;
+}
+
+
+.dropdown-enter {
+  opacity: 0;
+  height: 0px !important;
+}
+.dropdown-enter-active {
+  opacity: 1;
+  height: 324px !important;
+
+}
+.dropdown-exit {
+  height: 324px !important;
+  
+}
+.dropdown-exit-active {
+  height: 0px !important;
+}
+
+.dropdown1-enter {
+  opacity: 0;
+  height: 0px !important;
+}
+.dropdown1-enter-active {
+  opacity: 1;
+  height: 324px !important;
+
+}
+.dropdown1-exit {
+  height: 324px !important;
+  
+}
+.dropdown1-exit-active {
+  height: 0px !important;
+}
+
+.registerPrimary-enter {
+    opacity: 0;
+}
+.registerPrimary-enter-active {
+  opacity: 1;
+}
+.registerPrimary-exit {
+  opacity: 1;
+}
+.registerPrimary-exit-active {
+  opacity: 0;
+  display: none;
+}
+  
+  
+.registerSecondary-enter {
+  opacity: 0;
+}
+.registerSecondary-enter-active {
+  opacity: 1;
+}
+.registerSecondary-exit {
+  opacity: 1;
+}
+.registerSecondary-exit-active {
+  opacity: 0;
+  display: none;
+}
+
+.contextMenu-enter {
+  opacity: 0;
+  transform: scale(0,0);
+}
+.contextMenu-enter-active {
+  transition: 0.3s ease;
+  opacity: 1;
+  transform: scale(1,1);
+}
+.contextMenu-exit {
+  opacity: 1;
+  transform: scale(1,1);
+
+}
+.contextMenu-exit-active {
+  transition: 0.3s ease;
+  opacity: 0;
+  transform: scale(0,0);
+
+}
+
+.createContent-enter {
+  opacity: 0;
+  transform: scale(0,0);
+}
+.createContent-enter-active {
+  opacity: 1;
+  transform: scale(1,1);
+  transition: 0.3s ease;
+}
+.createContent-exit {
+  opacity: 1;
+  transform: scale(1,1);
+}
+.createContent-exit-active {
+  transition: 0.5s ease;
+  opacity: 0;
+  transform: scale(0,0);
+}
+
+.createContent-enter-done {
+  transform: scale(1,1) !important;
+}
+
+.commentSection-enter {
+  opacity: 0;
+  height: 0px !important;
+  width: 0px !important;
+}
+.commentSection-enter-active {
+  opacity: 1;
+  width: 50% !important;
+  height: 650px !important;
+}
+.commentSection-exit {
+  opacity: 1;
+  width: 50% !important;
+  height: 657px !important;
+}
+.commentSection-exit-active {
+  opacity: 0;
+  height: 0px !important;
+  width: 0px !important;
+}
+
+.profileHover-enter {
+  position: absolute;
+  transform: scale(0,0);
+}
+.profileHover-enter-active {
+  transform: scale(1,1);
+  transition: all 0.3s ease;
+}
+.profileHover-exit {
+  position: absolute;
+  transform: scale(1,1);
+}
+.profileHover-exit-active {
+  transform: scale(0,0);
+  transition: all 0.3s ease;
+}
+
+
+.repostPopup-enter {
+  opacity: 0;
+  height: 0px !important;
+  width: 0px !important;
+}
+.repostPopup-enter-active {
+  opacity: 1;
+  width: 100% !important;
+  height: 250px !important;
+}
+.repostPopup-exit {
+  opacity: 1;
+  width: 100% !important;
+  height: 250px !important;
+}
+.repostPopup-exit-active {
+  opacity: 0;
+  height: 0px !important;
+  width: 0px !important;
+}
+
+
+.description-enter {
+  opacity: 0;
+  height: 0px !important;
+  transition: 0.5s ease;
+}
+.description-enter-active {
+  opacity: 1;
+  height: 125px !important;
+}
+.description-exit {
+  opacity: 0;
+  transition: 0.5s ease;
+  height: 125px !important;
+}
+.description-exit-active {
+  opacity: 0;
+  height: 0 !important;
+}
+
+
+.ListPopup-enter-done {
+  transform: scale(1,1) !important;
+}
+
+
+.ListPopup-enter {
+  opacity: 0;
+  transform: scale(0,0);
+}
+.ListPopup-enter-active {
+  transition: 0.3s ease;
+  opacity: 1;
+  transform: scale(1,1);
+}
+.ListPopup-exit {
+  opacity: 1;
+  transform: scale(1,1);
+}
+.ListPopup-exit-active {
+  transition: 0.3s ease;
+  opacity: 0;
+  transform: scale(0,0);
+}
+
+.createPanel-enter {
+  opacity: 0;
+  transform: scale(0,0);
+}
+.createPanel-enter-active {
+  opacity: 1;
+  transform: scale(1,1);
+}
+.createPanel-exit {
+  opacity: 1;
+  transform: scale(1,1);
+}
+.createPanel-exit-active {
+  opacity: 0;
+  transform: scale(0,0);
+}

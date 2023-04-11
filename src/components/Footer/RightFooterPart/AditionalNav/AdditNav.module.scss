@@ -1,0 +1,61 @@
+.additNav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    align-items: center;
+	height: 100%;
+    margin-left: auto;
+    @media (max-width: 1250px) {
+		margin-left: auto;
+	}
+	li {
+		display: flex;
+		align-items: center;
+		svg {
+			width: 25px;
+			height: 25px;
+			fill: rgb(255, 255, 255);
+			transition: 0.3s ease;
+			cursor: pointer;
+			&:hover {
+				fill: #c5c5c5;
+			}
+		}
+	}
+}
+
+.Button {
+    width: 70px;
+    height: 70px;
+    transition: 0.3s ease;
+    &:hover {
+        background: rgba(255, 255, 255,0.2);
+        .icon {
+            svg {
+                transition: 0.3s ease;
+                transform: scale(1.1,1.1);
+                fill: rgb(218, 218, 218);
+            }
+        }
+    }
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: white;
+    cursor: pointer;
+    svg {
+        width: 25px !important;
+        height: 25px !important;
+        fill: white;
+        transition: 0.3s ease;
+    }
+}
+
+.Buttons{
+	display: flex;
+}

@@ -1,0 +1,22 @@
+.GreetingsBlock {
+    color: var(--color-text-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding-left: 10%;
+    height: 100%;
+    h1 {
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    h3 {
+        margin-top: 5px;
+        font-weight: 400;
+        font-size: 1.1rem;
+        line-height: 2rem;
+        opacity: 65%;
+    }
+}

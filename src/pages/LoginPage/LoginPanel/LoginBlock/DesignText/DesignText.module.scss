@@ -1,0 +1,13 @@
+.DesignText {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 85px;
+    span {
+        font-size: 27px;
+        opacity: 0.2;
+        font-weight: 400;
+    }
+}

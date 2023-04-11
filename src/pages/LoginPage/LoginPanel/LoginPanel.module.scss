@@ -1,0 +1,28 @@
+.LoginPanel {
+    width: 65%;
+    min-width: 950px;
+    padding-top: 55px;
+    height: 744px;
+    margin: 0 auto;
+    background: var(--color-white-opacity);
+    backdrop-filter: blur(10.5px);
+    position: relative;
+    z-index: 5;
+    transition: 0.5s ease;
+    @media (max-width: 1200px) {
+        width: 100%;
+        min-width: 750px;
+    }
+    @media (max-height: 810px) {
+        height: 100%;
+        padding: 0;
+        padding-top: 50px;
+    }
+    @media (max-height: 700px) {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        padding-top: 0;
+        overflow-y: hidden;
+    }
+}

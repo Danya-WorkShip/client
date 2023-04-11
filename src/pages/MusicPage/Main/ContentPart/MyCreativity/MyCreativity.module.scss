@@ -1,0 +1,36 @@
+.MyCreativity {
+    margin-top: 60px;
+    padding-top: 14px;
+    padding-left: 65px;
+    padding-bottom: 300px;
+    background: #161616;
+    transition: 0.3s ease;
+}
+
+.creativity {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    h1 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 55px;
+    }
+}
+
+.createArtistCard {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+    &:hover {
+        background: rgb(34, 34, 34);
+    }
+}

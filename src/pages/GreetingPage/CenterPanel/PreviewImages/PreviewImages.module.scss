@@ -1,0 +1,40 @@
+.PreviewImages {
+    width: 100%;
+    height: 290px;
+    position: relative;
+    margin-top: 54px;
+}
+
+.Images {
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    object-position: center;
+    gap: 35px;
+}
+
+.leftBlur {
+    width: 325px;
+    height: 150%;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background: linear-gradient(90.22deg, var(--color-mainColor) 5.02%, rgba(0, 0, 0, 0) 99.81%);
+    z-index: 1;
+}
+
+.rightBlur {
+    width: 325px;
+    height: 150%;
+    position: absolute;
+    top: -50px;
+    right: 0;
+    background: linear-gradient(270.22deg, var(--color-mainColor) 5.02%, rgba(0, 0, 0, 0) 81.46%);
+    z-index: 2;
+}

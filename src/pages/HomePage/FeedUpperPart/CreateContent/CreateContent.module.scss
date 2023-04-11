@@ -1,0 +1,459 @@
+.Button {
+    width: 91%;
+    margin: 0 auto;
+    height: 40px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 30px;
+    &:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+}
+
+.CreateContent {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.LeftTrigger {
+    height: 100%;
+    width: 22.5%;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    position: absolute;
+    transition: 0.3s ease;
+    &:hover {
+        background: rgba(255, 255, 255, 0.05);
+    }
+}
+.RightTrigger {
+    height: 100%;
+    width: 22.5%;
+    right: 0;
+    top: 0;
+    z-index: 3;
+    position: absolute;
+    transition: 0.3s ease;
+    &:hover {
+        background: rgba(255, 255, 255, 0.05);
+    }
+}
+
+.ActionPanel {
+    width: 55%;
+    height: 100%;
+    z-index: 2;
+    top: 0;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    cursor: default;
+    transition: 0.3s ease;
+}
+
+.ContentType {
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+    font-size: 15px;
+    svg {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 15px;
+    }
+    &:hover {
+        background: rgba(255, 255, 255, 0.3);
+    }
+}
+
+.CreatePanel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 22.5%;
+    top: 0;
+    width: 55%;
+    height: 100%;
+    background: rgba(255, 255, 255,0.1);
+    z-index: 55;
+    transition: 0.3s ease;
+    transform-origin: center 270px;
+}
+
+.CreateStoryCentralPanel {
+    width: 600px;
+    height: 100%;
+    background: white;
+    margin: 0 auto;
+    .StoryBackground {
+        width: 100%;
+        height: 100%;
+        background-size: cover !important;
+        background-position: center !important;
+        position: relative;
+        .UpperBar {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            align-items: center;
+
+            .Icon {
+                width: 70px;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:nth-child(2) {
+                    margin-left: auto;
+                }
+                svg {
+                    width: 25px;
+                    height: 25px;
+                    filter: drop-shadow( 1px 1px 5px rgba(0, 0, 0, 0.7));
+                    margin: 0px;
+                }
+            } 
+        }
+        .CentralPartElements {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            .HoverButton {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                border: 1px solid white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                bottom: 150px;
+                left: calc(50% - 25px);
+                transition: 0.3s ease;
+                &:hover {
+                    background: rgba(0, 0, 0, 0.5);
+                }
+                svg {
+                    width: 25px;
+                    height: 25px;
+                    margin: 0px;
+                }
+            }
+        }
+        .LowerBar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 130px;
+            .Publish {
+                width: 170px;
+                height: 50px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 25px;
+                transition: 0.3s ease;
+                &:hover {
+                    background: rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+    }
+}
+
+.CreatePostPanel {
+    min-height: 180px;
+    width: 100%;
+    height: 100%;
+    padding: 15px 35px;
+    padding-top: 22.5%;
+    backdrop-filter: blur(55px);
+    position: relative;
+    background: rgba(0, 0, 0, 0.1);
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.UpperPart {
+    display: flex;
+    input {
+        background: none;
+        height: 50px;
+        display: flex;
+        align-items: flex-start;
+        width: 90%;
+        color: #fff;
+    }
+}
+
+.Avatar {
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;     
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: #000;
+        object-fit: cover;
+    }
+}
+
+.LowerPart {
+    margin-top: 65px;
+    height: 45px;
+}
+
+.LowerBar {
+    display: flex;
+    height: 100%;
+    border-radius: 9px;
+    width: 100%;
+    align-items: center;
+    padding-left: 7px;
+    position: relative;
+    svg {
+        fill: #fff;
+    }
+    div {
+        cursor: pointer;
+    }
+}
+
+.AddFile {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    input {
+        transition: 0.5s ease;
+        width: 36px;
+        height: 36px;
+        position: relative;
+        
+        border-radius: 50%;
+    }
+    input::-webkit-file-upload-button {
+        visibility: hidden;
+    }
+    input::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: inline-block;
+        border-radius: 3px;
+        padding: 5px 8px;
+        outline: none;
+        color: rgb(255, 255, 255);
+        white-space: nowrap;
+        position: relative;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 15px;
+        border-radius: 50%;
+        z-index: 5;
+    }
+    input:active::before {
+        background: rgba(0, 0, 0,0.2);
+    }
+    svg {
+        z-index: 1;
+        position: absolute;
+        fill: rgb(255, 255, 255);
+        cursor: pointer;
+        left: 0;
+        margin: 8px;
+    }
+}
+
+.AddGif {
+    margin-right: 15px;
+}
+
+.AddSticker {
+    margin-right: 15px;
+}
+
+.AddSmile {
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.PublishButton {
+    background: #000;
+    width: 150px;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;     
+    button {
+        background: rgb(42, 146, 47);
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 26px;
+        transition: 0.3s ease;
+        &:hover {
+            background: rgb(88, 177, 93);
+        }
+        &:active {
+            background: rgb(46, 128, 50);
+        }
+    }
+}
+
+.GifPanel {
+    width: 100%;
+    input {
+        color: #000;
+    }
+}
+
+.GifPanelUpperPart {
+    height: 50px;
+    width: 100%;
+}
+
+.ClosePanel {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    background: rgba(255, 255, 255,0.1);
+    svg {
+        width: 35px;
+        height: 35px;
+        transition: 0.3s ease;
+        &:hover {
+            background: rgba(255, 255, 255,0.1);
+        }
+    }
+}
+
+.AddedFiles {
+    min-height: 0px;
+    width: 100%;
+    left: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+    padding: 10px;
+    max-height: 360px;
+}
+
+.AddedFile {
+    width: 170px;
+    height: 170px;
+    margin-left: 5px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+        transform: scale(1.05,1.05);
+        .DeleteFile {
+            opacity: 1;
+        }
+        img {
+            border-radius: 15px 0 15px 15px;
+        }
+    }
+    img {
+        width: 170px;
+        height: 170px;
+        border-radius: 15px;
+        object-fit: cover;
+        border: rgba(255, 255, 255,0.2) 1px solid;
+        transition: 0.3s ease;
+    }
+}
+
+.DeleteFile {
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: 0.3s ease;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    &:hover {
+        background: rgba(0, 0, 0,0.7);
+    }
+    svg {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.GifInput {
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    background: none;
+    color: #fff !important;
+}
+
+.HiddenVisually {
+    display: none;
+}
+
+.FilesError {
+    width: 500px;
+    height: 250px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: absolute;
+    background: #000;
+    z-index: 555;
+    left: calc(50% - 250px);
+    //top: calc(50% - 125px);
+    top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PostsPanelBlur {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(55px);
+    position: absolute;
+}

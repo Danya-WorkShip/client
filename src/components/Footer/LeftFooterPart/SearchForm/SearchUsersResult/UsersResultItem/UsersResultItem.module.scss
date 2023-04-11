@@ -1,0 +1,44 @@
+.usersResultItem {
+	width: 90%;
+    height: 65px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease;
+    padding-left: 15px;
+    margin-left: 15px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    &:hover {
+        background: rgba(0,0,0,0.1);
+    }
+}
+
+.avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    img {
+        height: 100%;
+        width: 100%;        
+        border-radius: 50%;
+    }
+}
+
+.names {
+    height: 100%;
+    margin-left: 15px;
+    .username{
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.9);
+        font-size: 15px;
+        padding-top: 6px;
+        height: 45%;
+    }
+    .userId {
+        font-weight: 400;
+        font-size: 14px;
+        opacity: 0.7;
+        height: 55%;
+    }
+}

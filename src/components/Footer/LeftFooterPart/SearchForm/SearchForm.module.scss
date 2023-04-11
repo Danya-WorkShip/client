@@ -1,0 +1,19 @@
+.SearchForm {
+	width: 15vw;
+	min-width: 150px;
+	height: 45px;
+	border-radius: 50px;
+	margin-left: 5vw;
+	form {
+		width: 15vw;
+		min-width: 200px;
+		max-width: 285px;
+		@media (max-width: 1550px) {
+			min-width: 50px;
+			width: 70px;
+		}
+	}
+	@media (max-width: 1550px) {
+		width: 50px;
+	}
+}

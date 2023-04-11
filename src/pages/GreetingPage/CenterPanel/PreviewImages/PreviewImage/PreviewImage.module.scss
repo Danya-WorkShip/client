@@ -1,0 +1,27 @@
+.PreviewImage {
+    width: 398px;
+    height: 214px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    img {
+        width: 150%;
+        height: 150%;
+        border-radius: 35px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.active {
+    min-width: 284px;
+    height: 250px;
+    img {
+        width: 140%;
+        height: 140%;
+        object-position: -70px;
+    }
+}

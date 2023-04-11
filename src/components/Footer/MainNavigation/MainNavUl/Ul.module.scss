@@ -1,0 +1,23 @@
+.UlNav {
+    display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 556px;
+    max-height: 70px;
+	width: 100%;
+}
+
+.individual_button {
+    margin-top: 35px;
+    width: 85px;
+    height: 85px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    transition: 0.2s ease;
+    &:hover {
+        margin-top: 5px;
+        border-radius: 50% 50% 0 0;
+        cursor: pointer;
+        background: rgb(197, 197, 197);
+    }
+}

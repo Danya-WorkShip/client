@@ -1,0 +1,80 @@
+.LeftTrackPanelPart {
+    height: 100%;
+    width: 25%;
+    display: flex;
+}
+
+.Less {
+    height: 100%;
+    width: 55px;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+    &:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
+
+.SoundBar {
+    height: 100%;
+    width: 150px;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Icon {
+    svg {
+        width: 18px;
+        height: 18px;
+        fill: white;
+    }
+}
+
+.Bar {
+    width: 100px;
+    height: 18px;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.SlideBar {
+    width: 100px;
+    height: 4px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+}
+
+.ProgressBar {
+    width: 100px;
+    height: 4px;
+    border-radius: 5px;
+    background: #EA294C;
+    transition: 0.3s ease;
+    transform: translateX(-90px);
+}
+
+.Slider {
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: white;
+    z-index: 150;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}

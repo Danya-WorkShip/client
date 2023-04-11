@@ -1,0 +1,27 @@
+.MyTracks {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    padding-left: 185px;
+    h1 {
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 35px;
+        @media (max-height: 700px) {
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+}
+
+.Tracks {
+    width: 100%;
+    margin-top: 35px;
+    @media (max-height: 700px) {
+        margin-top: 20px;
+    }
+}

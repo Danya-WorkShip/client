@@ -1,0 +1,74 @@
+.StoriesBar {
+    height: 120px;
+    padding-bottom: 10px;
+    width: 95%;
+    margin-top: 50px;
+    margin-left: 40px;
+    position: relative;
+    .Overflow {
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+        .Bar {
+            position: absolute;
+            top: 0px;
+            width: fit-content;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 0 56px;
+            transition: 0.3s ease;
+        }
+    }
+}
+
+.GoToLeft {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 55px;
+    left: -50px;
+    top: 20px;
+    z-index: 5;
+    border: 1px solid rgba(255, 255, 255,0.4);
+    backdrop-filter: blur(15px);
+    transition: 0.3s ease;
+    opacity: 0.5;
+    padding-right: 2px;
+    cursor: pointer;
+    &:hover {
+        background: rgba(255, 255, 255, 0.2);
+        opacity: 1;
+    }
+}
+
+.GoToRight {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 55px;
+    right: -50px;
+    top: 20px;
+    z-index: 5;
+    border: 1px solid rgba(255, 255, 255,0.4);
+    backdrop-filter: blur(15px);
+    transition: 0.3s ease;
+    opacity: 0.5;
+    padding-left: 2px;
+    cursor: pointer;
+    &:hover {
+        background: rgba(255, 255, 255, 0.2);
+        opacity: 1;
+    }
+}

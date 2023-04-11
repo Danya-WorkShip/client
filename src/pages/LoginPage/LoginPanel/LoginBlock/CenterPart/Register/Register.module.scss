@@ -1,0 +1,342 @@
+.Register {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+    position: relative;
+}
+
+.NameBlock {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    h1 {
+        width: 100%;
+        text-align: center;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        padding-top: 50px;
+    }
+    input {
+        width: 100%;
+        background: none;
+        text-align: center;
+        margin-top: 18px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 37px;
+    }
+    h3 {
+        width: 100%;
+        margin-top: 165px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        opacity: 0.8;
+    }
+}
+
+.chooseThumbnail {
+    position: absolute;
+    width: 750px;
+    min-height: 660px;
+    padding-bottom: 15px;
+    top: -245px;
+    left: -75px;
+    background: rgba(255, 255, 255, 1);
+    z-index: 15;
+    backdrop-filter: blur(55px);
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    transform: scale(0,0);
+    .field {
+        margin: 0 auto;
+        max-height: 600px;
+        min-height: 400px;
+        min-width: 175px;
+        margin-top: 40px;
+        position: relative;
+        .blackout {
+            //backdrop-filter: blur(5px);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            max-height: 600px;
+            background: rgba(0, 0, 0,0.5);
+        }
+        .selectedArea {
+            width: 100%;
+            height: 100px;
+            max-height: 600px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 19;
+            //backdrop-filter: blur(5px);
+        }
+        img {
+            transform-origin: center center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    h1 {
+        position: absolute;
+        padding-top: 15px;
+        left: 0;
+        top: 0;
+    }
+}
+
+.activeChooseThumbnail {
+    transform: scale(1,1);
+}
+
+.wrongCond {
+    margin-top: 15px !important;
+    position: absolute;
+    top: -45px;
+    left: 0;
+    color: rgb(214, 25, 25);
+}
+
+.avatar {
+    height: 170px;
+    width: 170px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.01,1.01);
+        background: rgba(0, 0, 0,0.9);
+        .hover {
+            background: rgba(0, 0, 0,0.5);
+            z-index: 7;
+        }
+        svg {
+            z-index: 8;
+        }
+    }
+    .hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.3s ease;
+    }
+    .avatarImg {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        z-index: 5;
+        position: relative;
+        object-fit: cover;
+    }
+    input {
+        transition: 0.5s ease;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        border-radius: 50%;
+        margin: 0;
+        border: 1px solid black;
+    }
+    input::-webkit-file-upload-button {
+        visibility: hidden;
+    }
+    input::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: inline-block;
+        border-radius: 3px;
+        outline: none;
+        color: rgb(255, 255, 255);
+        white-space: nowrap;
+        position: relative;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 15px;
+        border-radius: 50%;
+        z-index: 9;
+    }
+    input:active::before {
+        background: rgba(0, 0, 0,0.1);
+    }
+    svg {
+        z-index: 1;
+        position: absolute;
+    }
+}
+
+.avatarTip {
+    margin-top: 60px !important;
+}
+
+.chooseAvatar {
+    padding-top: 20px !important;
+}
+
+.profileTypes {
+    height: 170px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    .profileType {
+        height: 150px;
+        width: 150px;
+        border-radius: 15px;
+        background: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+        transition: 0.3s ease;
+        cursor: pointer;
+        svg {
+            fill: white;
+        }
+        &:hover {
+            transform: scale(1.01,1.01);
+            background: rgba(0, 0, 0,0.95);
+            svg {
+                transform: scale(0.95,0.95);
+            }
+        }
+        svg {
+            width: 30px;
+            height: 30px;
+            transition: 0.3s ease;
+        }
+        span {
+            color: white;
+            position: absolute;
+            bottom: 10px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}
+
+.active {
+    border-radius: 25px !important;
+    background: rgba(0, 0, 0, 0.1) !important;
+    border: 1px solid black;
+    svg {
+        fill: #000 !important;
+    }
+    span {
+        color: black !important;
+    }
+}
+
+.photoProfilePrewiew {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: -255px;
+    right: -50px;
+    background: white;
+    transition: 0.3s ease;
+    opacity: 0;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.3s ease;
+    }
+}
+
+.photoPreviewActive {
+    opacity: 1;
+    border-radius: 15px;
+    display: block;
+    img {
+        border-radius: 15px;
+    }
+}
+
+.chooseProfileType {
+    padding-top: 20px !important;
+}
+
+.profileTypeTip {
+    margin-top: 60px !important;
+}
+
+.showcase {
+    width: 100%;
+    margin-top: 20px;
+    height: 150px;
+    border-radius: 15px;
+    background: #000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    &:hover {
+        transform: scale(1.01,1.01);
+        background: rgba(0, 0, 0,0.95);
+        svg {
+            transform: scale(0.95,0.95);
+        }
+    }
+    svg {
+        fill: white;
+        transition: 0.3s ease;
+    }
+}
+
+.showcaseTip {
+    margin-top: 80px !important;
+}
+
+.NextButton {
+    margin-top: 15px;
+    background: black;
+    width: 100%;
+    height: 45px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    &:hover {
+        background: rgb(17, 17, 17);
+        color: rgb(230, 230, 230);
+    }
+}

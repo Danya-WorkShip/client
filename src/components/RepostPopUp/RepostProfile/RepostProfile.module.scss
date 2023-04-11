@@ -1,0 +1,28 @@
+.RepostProfile {
+    width: 200px;
+    height: 155px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    &:hover {
+        background: rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+    }
+    .Avatar {
+        width: 80px;
+        height: 80px;
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+    .Name {
+        margin-top: 15px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+}

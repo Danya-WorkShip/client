@@ -1,0 +1,16 @@
+.MusicPage {
+    width: 100%;
+    background: url('https://img.songfacts.com/calendar/20259.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body {
+    background-size: 50%;
+    -ms-user-select: none; 
+	-moz-user-select: none; 
+    -webkit-user-select: none; 
+    user-select: none;
+    background-attachment: fixed;
+}

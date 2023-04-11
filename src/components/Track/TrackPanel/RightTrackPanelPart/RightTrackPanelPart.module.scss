@@ -1,0 +1,42 @@
+.RightTrackPanelPart {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    .LeftPart {
+        height: 100%;
+        max-width: 350px;
+        width: fit-content;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .Names {
+            .TrackName {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 18px;
+            }
+            .TrackArtist {
+                margin-top: 5px;
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+.RightPart {
+    height: 100px;
+    width: 100px;
+    img {
+        min-width: 100px;
+        max-width: 100px;
+        min-height: 100px;
+        max-height: 100px;
+        object-fit: cover;
+    }
+}

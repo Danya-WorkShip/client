@@ -1,0 +1,144 @@
+.PopUpProfile {
+	width: 250px;
+	margin: auto;
+	display: flex;
+	div {
+		div {
+			color: black;
+		}
+	}
+}
+
+.MyImg {
+	min-width: 44px;
+	min-height: 44px;
+	height: 44px;
+	width: 44px;
+	max-width: 44px;
+	max-height: 44px;
+    border-radius: 50%;
+    transition: 0.5s ease;
+	border-radius: 50%;
+	object-fit: cover;
+	cursor: pointer;
+	z-index: 5;
+	&:hover {
+		border-radius: 10px;
+		div {
+			img {
+				border-radius: 10px;
+			}
+		}
+	}
+}
+
+.more_accounts_button {
+	margin-left: auto;
+	margin-top: 5px; 
+	cursor: pointer;
+	svg {
+		fill: black !important	;
+		width: 15px !important;
+		height: 20px !important;
+	}
+}
+
+
+.dropdownAccounts {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 65px;
+	background: rgb(255, 255, 255);
+	overflow: hidden;
+	transition: 0.5s ease;
+	max-height: 260px;
+	.title {
+		height: 40px;
+		width: 100%;
+		background: rgba(0, 0, 0, 0.05);
+		display: flex;
+		align-items: center;
+		padding-left: 20px;
+		span {
+			font-weight: 600;
+			color: rgba(0, 0, 0, 0.9);
+			font-size: 18px;
+			line-height: 23px;
+		}
+	}
+	.accounts {
+		display: flex;
+		flex-direction: column;
+		height: 220px;
+		overflow: scroll;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+		.accountItem {
+			width: 100%;
+			min-height: 58px;
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			padding-left: 20px;
+			cursor: pointer;
+			transition: 0.3s ease;
+			&:hover {
+				background: #EAEAEA;
+			}
+			.avatar {
+				width: 44px;
+				height: 44px;
+				border-radius: 50%;
+				img {
+					width: 100%;
+					height: 100%;
+					border-radius: 50%;
+					object-fit: cover;
+					object-position: center;
+				}
+			}
+			.names {
+				margin-top: 8px;
+				height: 100%;
+			}
+		}
+	}
+}
+
+.accountName {
+	color: rgba(0, 0, 0, 0.9);
+	font-size: 13px !important;
+	font-weight: 600 !important;
+	padding-top: 6px;
+	height: 45%;
+}
+
+.accountId {
+	font-weight: 500;
+	font-size: 11px;
+	opacity: 0.7;
+	height: 55%;
+}
+
+.rotateSvg {
+	transition: 0.3s ease;
+	transform: rotate(180deg);
+}
+
+svg {
+	transition: 0.5s ease;
+}
+
+.FooterProfileTab {
+	display: flex;
+	gap: 8px;
+	height: 100%;
+	width: auto;
+	max-width: 225px;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+}

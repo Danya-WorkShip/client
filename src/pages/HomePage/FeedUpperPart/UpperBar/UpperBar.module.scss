@@ -1,0 +1,35 @@
+.UpperBar {
+    display: flex;
+    align-items: center;
+    .Title {
+        font-size: 30px;
+        font-weight: 600;
+        margin-left: 40px;
+        width: 100px;
+    }
+    .Sections {
+        width: 75%;
+        margin-left: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .Section {
+            width: 140px;
+            height: 42px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 13px;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: 0.3s ease;
+            &:hover {
+                background: rgba(255, 255, 255, 0.2);
+            }
+            
+        }
+    }
+}
