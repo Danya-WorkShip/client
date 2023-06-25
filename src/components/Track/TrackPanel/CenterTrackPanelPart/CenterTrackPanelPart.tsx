@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import classes from './CenterTrackPanelPart.module.scss';
+import TrackProgressBar from './TrackProgressBar/TrackProgressBar';
 
 const CenterTrackPanelPart = () => {
+  const [isPlaying, setIsPlaying] = useState(true) 
   return (
     <div className={classes.CenterTrackPanelPart}>
         <div className={classes.UpperPart}>
@@ -13,9 +15,16 @@ const CenterTrackPanelPart = () => {
             <div className={classes.Previous}>
               <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.107929 0.365306C0.00745246 0.566239 -0.029803 3.90178 0.0258921 7.77794L0.126745 14.8253L1.90184 14.9125L3.67655 15L3.78343 11.8513L3.88993 8.70229L9.06882 11.8507C11.9172 13.5822 14.4148 14.92 14.6195 14.8232C15.1388 14.5774 15.1208 0.383154 14.6007 0.137314C14.3858 0.0356958 13.0736 0.654039 11.6842 1.51131C10.2949 2.36888 7.93083 3.80995 6.43008 4.71386L3.70177 6.35759V3.17894V0H1.99667C0.965935 0 0.218943 0.14451 0.107929 0.365306Z" fill="white"/></svg>
             </div>
-            <div className={classes.Stop}>
-              <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="4" height="16" fill="white"/><rect x="8" width="4" height="16" fill="white"/></svg>
-            </div>
+            {isPlaying
+              ?
+              <div className={classes.Stop} onClick={() => setIsPlaying(false)}>
+                <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="4" height="16" fill="white"/><rect x="8" width="4" height="16" fill="white"/></svg>
+              </div>
+              :
+              <div className={classes.Play} onClick={() => setIsPlaying(true)}>
+                <svg style={{width: 25, height: 25, marginLeft: 2}} fill="white" width="800px" height="800px" viewBox="-7 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M0 6.688v18.906c0 0.344 0.156 0.625 0.469 0.813 0.125 0.094 0.344 0.125 0.5 0.125s0.281-0.031 0.438-0.125l16.375-9.438c0.313-0.219 0.5-0.5 0.5-0.844 0-0.313-0.188-0.594-0.5-0.813l-16.375-9.438c-0.563-0.406-1.406 0.094-1.406 0.813z"></path></svg>
+              </div>
+            }
             <div className={classes.Next}>
               <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.8921 0.365306C14.9925 0.566239 15.0298 3.90178 14.9741 7.77794L14.8733 14.8253L13.0982 14.9125L11.3234 15L11.2166 11.8513L11.1101 8.70229L5.93118 11.8507C3.08283 13.5822 0.585204 14.92 0.380487 14.8232C-0.138832 14.5774 -0.120769 0.383154 0.399302 0.137314C0.614181 0.0356958 1.9264 0.654039 3.31577 1.51131C4.70514 2.36888 7.06917 3.80995 8.56992 4.71386L11.2982 6.35759V3.17894V0H13.0033C14.0341 0 14.7811 0.14451 14.8921 0.365306Z" fill="white"/></svg>
             </div>
@@ -26,10 +35,7 @@ const CenterTrackPanelPart = () => {
           </div>
         </div>
         <div className={classes.LowerPart}>
-          <div className={classes.DurationBar}>
-            <div className={classes.CompletedDurationBar}></div>
-            <div className={classes.Slider}></div>
-          </div>
+          <TrackProgressBar left={0} right={100} onChange={(e) => {}}/>
         </div>
     </div>
   )

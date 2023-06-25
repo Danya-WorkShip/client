@@ -1,0 +1,118 @@
+.AlbumPage {
+    backdrop-filter: blur(55px);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 5;
+    color: white;
+    .Content {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        z-index: 7;
+        background: rgba(0, 0, 0, 0.4);
+        display: flex;
+        .LeftPart {
+            width: 50%;
+            padding-top: 140px;
+            padding-left: 150px;
+            .Cover {
+                width: 450px;
+                height: 450px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .Name {
+                width: 100%;
+                height: 50px;
+                font-size: 40px;
+                font-weight: 700;
+                margin-top: 50px;
+            }
+            .Artist {
+                font-size: 16px;
+                font-weight: 600;
+                opacity: 0.5;
+                margin-top: 15px;
+                cursor: pointer;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            .AdditInfo {
+                display: flex;
+                margin-top: 15px;
+                opacity: 0.5;
+                .PubDate {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                .TrackCount {
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-left: 5px;
+                }
+            }
+        }
+        .RightPart {
+            width: 50%;
+            padding-top: 140px;
+            padding-right: 100px;
+            .Navigation {
+                width: 100%;
+                display: flex;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                .Variant {
+                    width: 33.33%;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.3s ease;
+                    cursor: pointer;
+                    font-size: 17px;
+                    font-weight: 700;
+                    &:hover {
+                        background: rgba(255, 255, 255, 0.1);
+                    }
+                }
+            }
+            .TrackList {
+                padding-top: 20px;
+                height: 620px;
+                overflow-y: scroll;
+                &::-webkit-scrollbar {
+                    width: 3px;
+                }
+                &::-webkit-scrollbar-track {
+                    background: transparent;
+                }
+                &::-webkit-scrollbar-thumb {
+                  background-color: rgb(133, 133, 133);
+                  border-radius: 6px;
+                }
+                div {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}
+
+.Blur {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(15px);
+    z-index: 6;
+}
+
+.Active {
+    background: rgba(255, 255, 255, 0.1);    
+}
+

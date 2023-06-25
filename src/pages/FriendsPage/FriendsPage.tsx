@@ -3,7 +3,7 @@ import classes from './FriendsPage.module.scss';
 import LeftPanel from './LeftPanel/LeftPanel';
 import CentralPanel from './CentralPanel/CentralPanel';
 import RightPanel from './RightPanel/RightPanel';
-import avatar from '../../images/girl.jpg';
+import avatar from '../../images/blueslidepark.png';
 
 const FriendsPage = () => {
   return (

@@ -1,6 +1,5 @@
 .Drop {
 	position: absolute;
-	width: 300px;
 	right: 0;
 	bottom: 70px;
 	background: rgb(255, 255, 255);
@@ -10,14 +9,14 @@
 }
 
 .Dropdownmenu {
-    width: 100%;
+    width: 300px;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	min-height: 324px;
 	h1 {
 		padding-left: 18px;
 		font-weight: 700;
-		color: rgba(0, 0, 0,0.9);
+		opacity: 0.9;
 		font-size: 19px;
 		line-height: 23px;
 	}
@@ -37,16 +36,21 @@
 		border-radius: 15px;
 		padding-right: 15px;
 		font-weight: 600;
-		color: rgba(0, 0, 0,0.9);
 		font-size: 14px;
 		line-height: 16px;
 		transition: 0.3s ease;
+		a {
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 16px;
+			color: currentColor;
+		}
 		&:hover {
 			width: 280px !important;
-			background: #EAEAEA !important;
+			background:local;//#EAEAEA !important;
 			svg {
 				transform: scale(0.9,0.9) !important;
-				fill: rgb(34, 34, 34) !important;
+				fill: currentColor !important;
 			}
 		}
 	}
@@ -70,7 +74,7 @@
     align-items: center;
     justify-content: center;
     svg {
-        fill: rgba(0, 0, 0,1) !important;
+        fill: currentColor !important;
         width: 20px !important;
         height: 20px !important;
         transition: 0.2s ease;
@@ -84,7 +88,7 @@
     width: 25px;
     transition: 0.3s ease;
     svg {
-        fill: rgba(0, 0, 0,0.9);
+        fill: currentColor;
         transition: 0.3s ease;
         height: 20px;
         width: 20px;

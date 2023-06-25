@@ -2,9 +2,10 @@
     height: 100px;
     width: 100%;
     display: flex;
+    display: none; //
     position: fixed;
     left: 0;
-    bottom: 55px;
+    bottom: 70px;
     z-index: 10;
     background: rgba(12, 12, 12, 0.5);
     backdrop-filter: blur(12.5px);

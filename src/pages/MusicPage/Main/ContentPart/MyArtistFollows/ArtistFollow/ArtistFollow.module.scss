@@ -1,11 +1,11 @@
 .ArtistFollow {
     width: 230px;
-    height: 260px;
+    height: 280px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
     cursor: pointer;
     &:hover {
         background: rgba(255, 255, 255, 0.1);
@@ -26,6 +26,6 @@
 .name {
     margin-top: 15px;
     text-align: center;
-    font-weight: 400;
-    font-size: 15px;
+    font-weight: 700;
+    font-size: 14px;
 }

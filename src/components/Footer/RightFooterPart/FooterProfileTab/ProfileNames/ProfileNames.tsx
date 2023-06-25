@@ -13,7 +13,7 @@ const ProfileNames: FC<IProfileNames> = ({user,usernameLength}) => {
 
   return (
     <div className={classes.ProfileNames}>
-      <ProfileName username={user.name} usernameLength={usernameLength}/>
+      <ProfileName username={user.name} nameLength={usernameLength}/>
       <ProfileId userid={user.id_name}/>
     </div>
   )

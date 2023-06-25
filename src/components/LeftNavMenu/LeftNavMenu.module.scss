@@ -1,0 +1,166 @@
+.LeftNavMenu {
+    width: 75px;
+    height: 400px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 5px;
+    top: 15px;
+    border-radius: 25px;
+    background: rgba(33, 33, 33, 0.8);
+    z-index: 5555;
+    backdrop-filter: blur(15px);
+    transition: 0.000001s ease;
+    &:hover {
+        border-radius: 25px 0 25px 25px;
+        .Drag {
+            opacity: 0.5;
+        }
+    }  
+    .Drag {
+        width: 20px;
+        height: 20px;
+        fill: white;
+        position: absolute;
+        right: 3px;
+        transition: 0.5s ease;
+        opacity: 0;
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    } 
+}
+
+.ExtendedLeftNavMenu {
+    width: 230px;
+    height: 420px;
+    position: fixed;
+    left: 5px;
+    top: 15px;
+    border-radius: 25px;
+    background: rgba(33, 33, 33, 0.8);
+    z-index: 5555;
+    backdrop-filter: blur(15px);
+    .MainNav {
+        align-items: start;
+        padding: 15px;
+    }
+    .IndividualButton {
+        margin-left: 5px;
+        display: flex;
+        height: 60px;
+        width: 200px;
+        align-items: center;
+        transition: 0.3s ease;
+        border-radius: 55px 15px 15px 55px;
+        &:hover {
+            background: rgba(0, 0, 0, 0.5);
+        }
+        span {
+            margin-left: 15px;
+            font-size: 13px;
+            font-weight: 700;
+            color: white;
+        }
+        .Button {
+            margin-left: 5px;
+        }
+    }
+    .Item {
+        width: 200px;
+        border-radius: 15px;
+        color: white;
+        justify-content: start;
+        padding-left: 25px;
+        span {
+            margin-left: 25px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+    }
+}
+
+.MainNav {
+    width: 60px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px 0;
+}
+
+.Item {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    &:hover {
+        background: rgba(0, 0, 0, 0.5);
+    }
+    svg {
+        width: 25px;
+        height: 25px;
+        fill: white;
+    }
+}
+
+.IndButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    transition: 0.3s ease;
+    &:hover {
+        transform: scale(1.1, 1.1);
+    }
+}
+
+.IndividualButton {
+    &::marker {
+        content: none;
+    }
+}
+
+.Buttons {
+    .Button {
+        width: 70px;
+        height: 70px;
+        transition: 0.3s ease;
+        &::marker {
+            content: none;
+        }
+        &:hover {
+            background: rgba(255, 255, 255,0.2);
+            .icon {
+                svg {
+                    transition: 0.3s ease;
+                    transform: scale(1.1,1.1);
+                    fill: rgb(218, 218, 218);
+                }
+            }
+        }
+    }
+    
+    .icon {
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: white;
+        cursor: pointer;
+        svg {
+            width: 25px !important;
+            height: 25px !important;
+            fill: white;
+            transition: 0.3s ease;
+        }
+    }
+    
+}

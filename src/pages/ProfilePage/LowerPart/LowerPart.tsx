@@ -2,7 +2,7 @@ import React from 'react'
 import classes from './LowerPart.module.scss';
 import { IUser, IPost } from './../../../types/types';
 import FeedPosts from '../../HomePage/FeedLowerPart/FeedPosts/FeedPosts';
-import avatar from '../../../images/969uCv-IAjQ.jpg';
+import avatar from '../../../images/collegedropout.jpg';
 import StoriesBar from '../../HomePage/FeedUpperPart/StoriesBar/StoriesBar';
 
 interface ILowerPart {

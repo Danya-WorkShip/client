@@ -78,7 +78,7 @@
     align-items: center;
     input {
         font-size: 25px;
-        font-weight: 500;
+        font-weight: 600;
         color: #fff;
         background: none;
         width: 100%;
@@ -211,7 +211,7 @@
         background: none;
         color: white;
         font-size: 13px;
-        font-weight: 500;
+        font-weight: 700;
     }
 }
 
@@ -232,13 +232,13 @@
         }
         h4 {
             font-size: 14px;
-            font-weight: 600;
+            font-weight: 700;
             line-height: 21px;
             color: #fff;
         }
         span {
-            opacity: 80%;
-            font-weight: 500;
+            opacity: 0.5;
+            font-weight: 700;
             font-size: 13px;
             color: #fff;
         }
@@ -266,11 +266,12 @@
     border-radius: 15px;
     transition: 0.3s ease;
     background: rgba(255, 255, 255, 0.1);
-    font-weight: 500;
+    font-weight: 600;
     font-size: 13px;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.9);
     &:hover {
         background: rgba(255, 255, 255, 0.2);
+        color: white;
     }
     
 }
@@ -294,14 +295,14 @@
         min-height: 125px;
         background: none;
         padding-top: 25px;
-        font-weight: 400;
+        font-weight: 700;
         font-size: 	14px;
         color: white;
         line-height: 24px;
         text-align: center;
         a {
             color: #fff;
-            font-weight: 400;
+            font-weight: 700;
             font-size: 	16px;
             line-height: 22px;
             &:visited {
@@ -315,20 +316,18 @@
 }
 
 .Menu {
-    width: 300px;
-    height: 200px;
-    background: rgba(255, 255, 255, 0.1);
+    width: 210px;
+    background: rgba(33, 33, 33, 0.7);
     border-radius: 25px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
     overflow: hidden;
     box-shadow: #0d0d0d 0px 0px 15px -2px;
     transition: 0.3s ease;
     position: absolute;
-    backdrop-filter: blur(25px);
+    backdrop-filter: blur(5px);
     z-index: 100;
-    -webkit-backdrop-filter: blur(55px);
+    -webkit-backdrop-filter: blur(25px);
     top: 50px;
-    right: -130px;
+    right: -90px;
     .MenuAction {
         display: flex;
         align-items: center;
@@ -338,10 +337,10 @@
         transition: 0.3s ease;
         font-size: 12px;
         font-weight: 600;
-        color: white;
+        color: rgb(17, 17, 17);
         cursor: pointer;
         &:hover {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.5);
         }
     }
 }

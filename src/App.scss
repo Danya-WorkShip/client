@@ -327,3 +327,83 @@
   opacity: 0;
   transform: scale(0,0);
 }
+
+
+.addPlaylists-enter {
+  opacity: 0;
+  transform: scale(0,0);
+}
+.addPlaylists-enter-active {
+  transition: 0.3s ease;
+  opacity: 1;
+  transform: scale(1,1);
+}
+.addPlaylists-exit {
+  opacity: 1;
+  transform: scale(1,1);
+}
+.addPlaylists-exit-active {
+  transition: 0.3s ease;
+  opacity: 0;
+  transform: scale(0,0);
+}
+
+
+.dropdownLeftMenu-enter {
+  opacity: 0;
+  width: 0px !important;
+}
+.dropdownLeftMenu-enter-active {
+  opacity: 1;
+  width: 324px !important;
+
+}
+.dropdownLeftMenu-exit {
+  width: 324px !important;
+}
+.dropdownLeftMenu-exit-active {
+  width: 0px !important;
+}
+
+.settings-enter {
+  opacity: 0;
+  height: 0px;
+  width: 0px;
+}
+.settings-enter-active {
+  transition: 0.3s ease;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+.settings-exit {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+.settings-exit-active {
+  transition: 0.3s ease;
+  opacity: 0;
+  height: 0px;
+  width: 0px;
+}
+
+
+.photoPopup-enter {
+  opacity: 0;
+  transform: scale(0,0);
+}
+.photoPopup-enter-active {
+  transition: 0.3s ease;
+  opacity: 1;
+  transform: scale(1,1);
+}
+.photoPopup-exit {
+  opacity: 1;
+  transform: scale(1,1);
+}
+.photoPopup-exit-active {
+  transition: 0.3s ease;
+  opacity: 0;
+  transform: scale(0,0);
+}

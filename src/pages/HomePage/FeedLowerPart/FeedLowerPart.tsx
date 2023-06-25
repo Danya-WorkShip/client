@@ -2,7 +2,7 @@ import React from 'react'
 import { IUser } from '../../../types/types';
 import classes from './FeedLowerPart.module.scss';
 import FeedPosts from './FeedPosts/FeedPosts';
-import avatar from '../../../images/girl.jpg';
+import avatar from '../../../images/ToPimpAButterfly.png';
 import { IPost } from './../../../types/types';
 
 const FeedLowerPart = () => {

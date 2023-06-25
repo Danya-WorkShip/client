@@ -2,7 +2,7 @@ import React from 'react'
 import classes from './FeedUpperPart.module.scss';
 import StoriesBar from './StoriesBar/StoriesBar';
 import UpperBar from './UpperBar/UpperBar';
-import storyPreview from '../../../images/girl.jpg';
+import storyPreview from '../../../images/blueslidepark.png';
 import CreateContent from './CreateContent/CreateContent';
 import avatar from '../../../images/kendrick.png';
 

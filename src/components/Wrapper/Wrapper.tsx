@@ -13,13 +13,17 @@ import SettingsPage from './../../pages/SettingsPage/SettingsPage';
 import PrivacyPolicyPage from './../../pages/PrivacyPolicyPage/PrivacyPolicyPage';
 import UserAgreement from './../../pages/UserAgreement/UserAgreement';
 import CreateThemePage from './../../pages/CreateThemePage/CreateThemePage';
+import LeftNavMenu from '../LeftNavMenu/LeftNavMenu';
+import AlbumPage from '../../pages/AlbumPage/AlbumPage';
 
 function Wrapper() {
   const isLogin = true
+  const isFoterLeft = false
 
   return (
     <div className={classes.Wrapper} onContextMenu={e => e.preventDefault()}>
-      {isLogin && <Footer />}
+      {isLogin && !isFoterLeft && <Footer />}
+      {isFoterLeft && <LeftNavMenu />}
       <Routes>
         <Route path='/feed' element={<HomePage />}></Route>
         <Route path='/settings' element={<SettingsPage />}></Route>
@@ -34,6 +38,7 @@ function Wrapper() {
         <Route path='/user_agreement' element={<UserAgreement />}></Route>
         <Route path='/faq' element={<UserAgreement />}></Route>
         <Route path='/create_theme' element={<CreateThemePage />}></Route>
+        <Route path='/playlist/*' element={<AlbumPage />}></Route>
         <Route path='*' element={<NotFoundPage />}></Route>
       </Routes>
     </div>

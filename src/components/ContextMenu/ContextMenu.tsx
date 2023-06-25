@@ -5,8 +5,6 @@ import classes from './ContextMenu.module.scss';
 interface IContextMenu {
     x: number
     y: number
-    height?: number | undefined
-    width?: number | undefined
     children: React.ReactNode
     closeContextMenu: () => void
 }

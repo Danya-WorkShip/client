@@ -1,7 +1,7 @@
 .HomePage {
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, rgba(255, 61, 190, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(180deg, rgba(88, 231, 176, 0.4) 0%, rgba(0, 0, 0, 0) 100%); //rgba(255, 61, 190, 0.2)
 }
 
 .Content {
@@ -9,4 +9,7 @@
 	padding-top: 45px;
 	color: #fff;
 	transition: 0.5s ease;
+    @media (max-width: 1000px) {
+        padding-top: 100px;
+    }
 }

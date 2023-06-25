@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './FollowsProfilesBar.module.scss';
-import avatar from '../../../images/girl.jpg';
+import avatar from '../../../images/collegedropout.jpg';
 import Profile from './Profile/Profile';
 import { IUser } from '../../../types/types';
 

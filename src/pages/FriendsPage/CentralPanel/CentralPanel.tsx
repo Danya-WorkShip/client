@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './CentralPanel.module.scss';
-import avatar from '../../../images/girl.jpg';
+import avatar from '../../../images/blueslidepark.png';
 import { IUser } from '../../../types/types';
 import CentralFriendsProfile from './CentralFriendsProfile/CentralFriendsProfile';
 import RecomendedFriendsProfile from './RecomendedFriendsProfile/RecomendedFriendsProfile';
