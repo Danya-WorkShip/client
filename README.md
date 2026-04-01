@@ -1,46 +1,68 @@
-# Getting Started with Create React App
+# 🌐 Gett - Social Ecosystem Concept
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### 📝 Project Overview
 
-In the project directory, you can run:
+A comprehensive social network platform inspired by Facebook and VK, built with a focus on modern UI/UX and scalable frontend architecture.
 
-### `npm start`
+This was my **first major full-stack project, built entirely from scratch at the age of 16**. It served as a rigorous deep dive into the React ecosystem, where I independently mastered complex state management, custom UI components, and full-stack integration.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Driven by curiosity and a "learn-by-doing" approach, I explored everything from low-level architectural patterns to DevOps basics like Docker, aiming to create a platform that outperforms existing solutions in both design and speed.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### 🛠 Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Frontend**: React, TypeScript.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Styling & Animation**: Custom CSS/Modules with a focus on high-fidelity interactions.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Architecture**: Modular Component Design.
 
-### `npm run eject`
+4. **Tools & Dev Ops**: Docker (containerization setup), Git.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+5. **Design**: Full UI/UX cycle in Figma (Custom Design System).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+6. **Backend (Architected)**: NestJS + PostgreSQL (Database schema designed for high-load social interactions).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 🏗 Architecture & Semantic Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The project follows a clean, modular folder structure to ensure maintainability:
+
+*   📂 `components/` — Atomic and complex UI units (90% custom-built).
+
+*   📂 `pages/` — Semantic routing and view logic (Feed, Messenger, Music, Profile, etc.).
+
+*   📂 `store/` — Global state management for user sessions and app data.
+
+*   📂 `types/` — Strict TypeScript definitions for data integrity.
+
+*   📂 `utils/` — Helper functions and business logic.
+
+
+---
+
+
+### ✨ Key Technical Highlights
+
+1. **Advanced UI Components**: Developed a sophisticated nested dropdown/context menu system from scratch (right-click triggered), featuring multi-level tab navigation within the menu.
+
+2. **Complex Data Rendering**: Implemented efficient rendering for heavy data sets (Music albums, News feeds, User lists).
+
+3. **Custom UX/UI**: Every pixel was designed by me in Figma before implementation, ensuring a cohesive and "better-than-original" user experience.
+
+4. **Deep Dive**: During development, I focused on low-level details, including Docker configuration for local development and PostgreSQL relational mapping.
+
+
+---
+
+
+### 📂 Current Status
+
+The frontend is the primary showcase of this repository. While the backend logic (NestJS) was fully architected and connected during the initial phase, the current public version focuses on UI/UX excellence and Frontend performance.
